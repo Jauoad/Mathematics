@@ -15,6 +15,19 @@ double areaTriangle(double base, double height) {
     return 0.5 * base * height;
 }
 
+/*
+
+Formula : A = 1/2 * base * height
+
+        |\
+        | \
+  height|  \
+        |   \
+        |____\
+          base
+
+*/
+
 // 2. Area of Triangle (Heron's Formula)
 double areaHeron(double a, double b, double c) {
     double s = (a + b + c) / 2;
@@ -23,12 +36,38 @@ double areaHeron(double a, double b, double c) {
     return sqrt(s * (s - a) * (s - b) * (s - c));
 }
 
+/*
+
+Formula : A = √s(s-a)(s-b)(s-c)      WHERE s = a+b+c/2  -> ( 1/2 Perimeter (P) )
+
+    c
+   / \
+  /   \
+ /     \
+a-------b
+
+
+*/
+
 // 3. Area of Square
 double areaSquare(double side) {
     cout << "Square Area Schema:\n";
     cout << "+---------+\n|         |\n|         |\n+---------+\n";
     return side * side;
 }
+
+/*
+
+Formula : A = side^2
+
++---------+
+|         |  area = side * side
+|         |
++---------+
+
+
+
+*/
 
 // 4. Area of Circle
 double areaCircle(double radius) {
@@ -37,12 +76,41 @@ double areaCircle(double radius) {
     return M_PI * radius * radius;
 }
 
+/*
+
+Formula : A = π * r^2
+       || A = PI * r^2
+
+    c
+   / \
+  /   \
+ /     \
+a-------b
+
+
+
+*/
+
 // 5. Perimeter of Triangle
 double perimeterTriangle(double a, double b, double c) {
     cout << "Triangle Perimeter Schema:\n";
     cout << "    c\n   / \\\n  /   \\\n /     \\\na-------b\n";
     return a + b + c;
 }
+
+/*
+
+Formula : P = a + b + c
+
+    c
+   / \
+  /   \
+ /     \
+a-------b
+
+
+
+*/
 
 // 6. Perimeter of Square
 double perimeterSquare(double side) {
@@ -51,12 +119,43 @@ double perimeterSquare(double side) {
     return 4 * side;
 }
 
+/*
+
+Formula : P = 4 * side
+
+
++---------+
+|         |  
+|         |
++---------+
+
+
+
+
+*/
+
 // 7. Perimeter of Circle
 double perimeterCircle(double radius) {
     cout << "Circle Perimeter Schema:\n";
     cout << "   *\n *   *\n*     *\n *   *\n   *\n";
     return 2 * M_PI * radius;
 }
+
+/*
+
+Formula : P = 2 * π * r 
+       || P = 2 * PI * r
+
+
+  (*    
+(*   *   
+(*       *
+(*   *
+  (*
+
+
+
+*/
 
 // 8. Distance between two points (2D)
 double distance2D(double x1, double y1, double x2, double y2) {
@@ -65,12 +164,37 @@ double distance2D(double x1, double y1, double x2, double y2) {
     return sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2));
 }
 
+
+/*
+
+Formula : d = √(x2-x1)^2 + (y2-y1)^2       -> 2D
+          d = sqrt(x2-x1)^2 + (y2-y1)^2)   -> 2D
+
+(x1, y1) ------- (x2, y2)
+
+
+*/
+
 // 9. Distance between two points (3D)
 double distance3D(double x1, double y1, double z1, double x2, double y2, double z2) {
     cout << "Distance 3D Schema:\n";
     cout << "(x1, y1, z1)\n     |\n     |\n(x2, y2, z2)\n";
     return sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2) + pow(z2 - z1, 2));
 }
+
+/*
+
+Formula : d = √(x2-x1)^2 + (y2-y1)^2 + (z2 - z1)^2        -> 3D
+          d = sqrt(x2-x1)^2 + (y2-y1)^2 + (z2 - z1)^2)    -> 3D
+
+          
+(x1, y1, z1)
+     |
+     |
+(x2, y2, z2)
+
+
+*/
 
 // 10. Pythagorean Theorem
 double pythagoreanTheorem(double a, double b) {
@@ -79,12 +203,41 @@ double pythagoreanTheorem(double a, double b) {
     return sqrt(a * a + b * b);
 }
 
+/*
+
+Formula : c = √a^2+b^2  || c = sqrt(a^2 + b^2) 
+ 
+    |
+    |  b
+    |\
+    | \
+    |  \
+    |   \
+    |    \
+    +-----+
+      a
+
+
+*/
+
 // 11. Surface Area of Sphere
 double surfaceAreaSphere(double radius) {
     cout << "Surface Area Sphere Schema:\n";
     cout << "   *\n *   *\n*     *\n *   *\n   *\n";
     return 4 * M_PI * radius * radius;
 }
+
+/*
+
+Formula : A (surface area) = 4 * π * r^2
+
+   *
+ *   *
+*     *
+ *   *
+   *
+
+*/
 
 // 12. Volume of Sphere
 double volumeSphere(double radius) {
@@ -93,12 +246,47 @@ double volumeSphere(double radius) {
     return (4.0 / 3.0) * M_PI * pow(radius, 3);
 }
 
+
+/*
+
+Formula : V (volume) = (4/3) * π * r^3
+​	
+
+
+    '*    
+  *    *      
+'*      *
+ '*    *
+    '*
+
+
+
+
+*/
+
 // 13. Volume of Cylinder
 double volumeCylinder(double radius, double height) {
     cout << "Cylinder Volume Schema:\n";
     cout << " +-----+\n |     | height\n |     |\n +-----+\n";
     return M_PI * radius * radius * height;
 }
+
+/*
+
+V = π × r^2 × height
+or
+V = PI × r^2 × height
+
+
+ +-----+ height
+ |     |
+ |     |
+ |     |
+ +-----+
+volume = π * r^2 * height
+
+
+*/
 
 // 14. Angle Between Two Vectors (Dot Product)
 double dotProduct(double Ax, double Ay, double Bx, double By) {
@@ -118,12 +306,41 @@ double angleBetweenVectors(double Ax, double Ay, double Bx, double By) {
     return acos(dot / (magA * magB)); // Angle in radians
 }
 
+/*
+    Forumla : cos(θ)= A⋅B / ∥A∥×∥B∥
+​	
+ 
+    A (Ax, Ay)
+        \
+         \
+          \
+           \
+            \
+    B (Bx, By)
+
+
+
+    */
+
 // 15. Area of Parallelogram
 double areaParallelogram(double base, double height) {
     cout << "Parallelogram Area Schema:\n";
     cout << "  +---------+\n /         /\n/         /\n+---------+\n";
     return base * height;
 }
+
+/*
+    Forumla : A = base × height
+
+
+    +---------+
+   /         /
+  /         /
+ +---------+
+    base
+
+
+    */
 
 int main() {
     // Example usage of each function
