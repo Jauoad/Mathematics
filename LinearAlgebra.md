@@ -19,7 +19,7 @@ $$
 
 ## Matrix Multiplication
 
-For two matrices \(A\) (of size \(m \times n\)) and \(B\) (of size \(n \times p\)), the matrix product \(C = A \cdot B\) is given by:
+For two matrices `A` (of size `m × n`) and `B` (of size `n × p`), the matrix product `C = A ⋅ B` is given by:
 
 $$
 C_{ij} = \sum_{k=1}^{n} A_{ik} \cdot B_{kj}
