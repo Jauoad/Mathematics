@@ -19,11 +19,18 @@ $$
 
 ## Matrix Multiplication
 
-For two matrices \(A\) and \(B\):
+For two matrices \(A\) (of size \(m \times n\)) and \(B\) (of size \(n \times p\)), the matrix product \(C = A \cdot B\) is given by:
 
 $$
-(A \cdot B)_{ij} = \sum_{k=1}^{n} A_{ik} \cdot B_{kj}
+C_{ij} = \sum_{k=1}^{n} A_{ik} \cdot B_{kj}
 $$
+
+Where:
+- \(A_{ik}\) represents the element in the \(i\)-th row and \(k\)-th column of matrix \(A\),
+- \(B_{kj}\) represents the element in the \(k\)-th row and \(j\)-th column of matrix \(B\),
+- \(C_{ij}\) is the element in the \(i\)-th row and \(j\)-th column of the resulting matrix \(C\).
+
+
 
 ## Determinant of a 2x2 Matrix
 
