@@ -1,4 +1,4 @@
-This directory contains the c++ code and mathematical formulas for programming.
+# This directory contains the c++ code and mathematical formulas for programming.
 
 # Mathematical Formulas for Programming
 
@@ -186,6 +186,12 @@ For two matrices \(A\) and \(B\):
 $$
 (A \cdot B)_{ij} = \sum_{k=1}^{n} A_{ik} \cdot B_{kj}
 $$
+
+$$
+(A \cdot B)_{ij} = \sum_{k=1}^{n} A_{ik} \cdot B_{kj}
+$$
+
+
 
 ### 6.4 Determinant of a 2x2 Matrix
 
