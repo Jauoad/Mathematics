@@ -26,9 +26,9 @@ C_{ij} = \sum_{k=1}^{n} A_{ik} \cdot B_{kj}
 $$
 
 Where:
-- \(A_{ik}\) represents the element in the \(i\)-th row and \(k\)-th column of matrix \(A\),
-- \(B_{kj}\) represents the element in the \(k\)-th row and \(j\)-th column of matrix \(B\),
-- \(C_{ij}\) is the element in the \(i\)-th row and \(j\)-th column of the resulting matrix \(C\).
+- A_ik is the element in the i-th row and k-th column of matrix A,
+- B_kj is the element in the k-th row and j-th column of matrix B,
+- C_ij is the element in the i-th row and j-th column of the resulting matrix C.
 
 
 
