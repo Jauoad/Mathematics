@@ -1,5 +1,3 @@
-# This directory contains the c++ code and mathematical formulas for programming.
-
 # Mathematical Formulas for Programming
 
 ## 1. Number Theory Formulas
@@ -181,16 +179,11 @@ $$
 
 ### 6.3 Matrix Multiplication
 
-For two matrices \(A\) and \(B\):
+For two matrices `A` (of size `m × n`) and `B` (of size `n × p`), the matrix product `C = A ⋅ B` is given by:
 
 $$
-(A \cdot B)_{ij} = \sum_{k=1}^{n} A_{ik} \cdot B_{kj}
+C_{ij} = \sum_{k=1}^{n} A_{ik} \cdot B_{kj}
 $$
-
-$$
-(A \cdot B)_{ij} = \sum_{k=1}^{n} A_{ik} \cdot B_{kj}
-$$
-
 
 
 ### 6.4 Determinant of a 2x2 Matrix
