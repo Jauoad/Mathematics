@@ -1,4 +1,4 @@
-# Number Theory Formulas
+# Number Theory
 
 ## Greatest Common Divisor (GCD)
 
