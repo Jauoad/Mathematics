@@ -1,4 +1,4 @@
-# Mathematical Formulas for Programming
+# Mathematical Formulas
 
 ## 1. Number Theory Formulas
 
