@@ -1,4 +1,4 @@
-# Calculus 2 (Integration)
+# Calculus 2 - Integration
 
 ## Definite Integral
 
